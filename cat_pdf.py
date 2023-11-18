@@ -15,7 +15,7 @@ def extract_text_from_pdf(pdf_path):
             
             # Extract text from the page
             text += page.extract_text()
-    
+    pdf_file.close()  # Explicitly closing the file after reading
     return text
 
 
